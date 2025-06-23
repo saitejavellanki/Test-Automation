@@ -1,0 +1,55 @@
+requirements_analysis_task:
+  description: >
+    Analyze and define comprehensive requirements for {topic}.
+    Identify functional requirements, performance requirements, interface requirements, 
+    error handling requirements, hardware requirements, safety requirements, and 
+    power management requirements. Ensure all requirements are clear, testable, 
+    and complete for robust implementation.
+  expected_output: >
+    A comprehensive requirements document with categorized requirements including:
+    - Functional Requirements
+    - Interface Requirements  
+    - Performance Requirements
+    - Error Handling Requirements
+    - Hardware Requirements
+    - Safety Requirements
+    - Power Management Requirements
+    Each requirement should be clearly defined and testable.
+  agent: requirements_engineer
+
+test_case_design_task:
+  description: >
+    Design comprehensive test cases based on the provided {topic} requirements.
+    Create test cases that validate all functional, performance, interface, error handling,
+    hardware, safety, and power management requirements. Include test objectives,
+    preconditions, test steps, expected results, and pass criteria for each test case.
+    Ensure complete coverage of all requirements and edge cases.
+  expected_output: >
+    A detailed test case document organized by requirement categories with:
+    - Test case ID and objective
+    - Preconditions and test data
+    - Detailed test steps
+    - Expected results
+    - Pass/fail criteria
+    - Test environment requirements
+    Complete coverage matrix showing requirement to test case mapping.
+  agent: test_case_designer
+
+test_script_implementation_task:
+  description: >
+    Implement executable test scripts using Google Test framework based on the provided
+    test cases for {topic}. Create comprehensive C++ test suites with proper mocking,
+    parameterized tests, and fixtures. Include setup/teardown, error injection,
+    performance measurements, and thread safety tests. Ensure tests are maintainable,
+    reliable, and provide clear failure diagnostics.
+  expected_output: >
+    Complete Google Test C++ implementation including:
+    - Test fixtures and setup/teardown
+    - Mock classes and interfaces
+    - Parameterized test suites
+    - Performance and timing tests
+    - Error injection and recovery tests
+    - Thread safety and concurrency tests
+    - Clear test documentation and comments
+    All code should be production-ready and executable.
+  agent: test_script_developer
